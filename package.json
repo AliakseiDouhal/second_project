@@ -1,0 +1,44 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "browser-sync": "^2.18.13",
+    "gulp-cache": "^0.5.0",
+    "gulp-connect": "^3.2.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^3.2.1",
+    "jshint-stylish": "^2.2.1",
+    "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-uglify": "^1.5.4",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
+    "pump": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliakseiDouhal/Test_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliakseiDouhal/Test_project/issues"
+  },
+  "homepage": "https://github.com/AliakseiDouhal/Test_project#readme"
+}
