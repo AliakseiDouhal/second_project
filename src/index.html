@@ -9,13 +9,13 @@
 <body>
     <header class="fixed-top" >
         <nav class="navbar navbar-expand-lg navbar-light  content">
-            <a class="navbar-brand" href="#">
-                <img src="img/Mountains-Landing-Page.png">
+            <a class="navbar-brand logo" href="#">
+                <span>Moun</span>tains
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">OUR STORY<span class="sr-only">(current)</span></a>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#">CONTACT</a>
                     </li>
                 </ul>
-                <button class="custom-button" type="button" aria-label="Call us">
+                <button class="custom-button custom-button--transparent" type="button" aria-label="Call us">
                     CALL US
                 </button>
             </div>
@@ -70,7 +70,7 @@
                         Aliquam sed posuere urna, et gravida nisl. Praesent  interdum nisl libero, pretium egestas purus eleifend
                         vitae. Mauris suscipit vel lectus at luctus.
                     </p>
-                    <button class="custom-button custom-button--blue custom-button-blue--small" type="button" aria-label="read more">
+                    <button class="custom-button custom-button--blue custom-button--blue--small" type="button" aria-label="read more">
                         READ MORE
                     </button>
 
@@ -87,36 +87,30 @@
             <div class="content d-flex flex-column align-items-center">
                 <div class="waves"></div>
                 <h2>OUR JOURNAL</h2>
-                <div class="journal-board d-flex flex-row-wrap">
-                    <div class="d-flex">
-                        <div class="red"></div>
-                        <div class="black"></div>
-                        <!--<div>
+                <div class="journal-board">
+                    <div class="d-flex float-left">
+                        <div>
                             <img src="img/trees.png">
                         </div>
                         <div>
                             <img src="img/trees.png">
-                        </div>-->
+                        </div>
                     </div>
-                    <div class="d-flex flex-column-wrap">
-                        <div class="red"></div>
-                        <div class="black"></div>
-                        <!--<div>
+                    <div class="d-flex float-left">
+                        <div>
                             <img src="img/water.png">
                         </div>
                         <div>
                             <img src="img/water.png">
-                        </div>-->
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="red"></div>
-                        <div class="black"></div>
-                       <!-- <div>
+                    <div class="d-flex float-none flex-column ">
+                        <div>
                             <img src="img/mountains.png">
                         </div>
                         <div>
                             <img src="img/mountains.png">
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,26 +121,255 @@
                 <div class="waves"></div>
                 <h2>DO YOU WANNA GO?</h2>
                 <p>
-                    text
+                    Aliquam sed posuere urna, et gravida nisl. Praesent  interdum nAliquam sed posuere urna, et gravida nisl. Praesent  interdum nAliquam sed posuere urna, et gravida nisl. Praesent  interdum n
                 </p>
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="inputEmail">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="exaple@example.com">
+                        <label for="inputEmail"></label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="inputPhone">Phone</label>
-                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                        <label for="inputPhone"></label>
+                        <input type="text" class="form-control" id="inputPhone" placeholder="Your phone:">
                     </div>
-                    <button type="submit" class="custom-button custom-button--blue custom-button--blue--middle">Your phone:</button>
+                    <button type="submit" class="custom-button custom-button--blue custom-button--blue--middle">Order now</button>
                 </form>
-                <div class="hexagon"><span></span></div>
+                <div class="d-flex">
+                    <img src="img/locked.png">
+                    <span class="secure-text" >* Your data will not be transfered</span>
+                </div>
+            </div>
+        </div>
+        <!--how-we-work-->
+        <div class="how-we-work">
+            <div class="content d-flex flex-column align-items-center">
+                <div class="waves"></div>
+                <h2>HOW WE WORK</h2>
+                <div class="full-width d-flex justify-content-between dotting-line">
+                    <div class="circle circle--blue--small">1</div>
+                    <div class="circle circle--blue--small">2</div>
+                    <div class="circle circle--blue--small">3</div>
+                    <div class="circle circle--blue--small">4</div>
+                </div>
+                <div class="full-width d-flex justify-content-between">
+                    <div class="dotting-line--rotate"></div>
+                    <div class="dotting-line--rotate"></div>
+                    <div class="dotting-line--rotate"></div>
+                    <div class="dotting-line--rotate"></div>
+                </div>
+                <div class="full-width d-flex justify-content-between">
+                    <div class="circle circle--grey">
+                        <div class="hexagon">
+                            <span>
+                                <img src="img/schema1.png">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="circle circle--grey">
+                        <div class="hexagon">
+                            <span>
+                                <img src="img/schema2.png">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="circle circle--grey">
+                        <div class="hexagon">
+                            <span>
+                                <img src="img/schema3.png">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="circle circle--grey">
+                        <div class="hexagon">
+                            <span>
+                                <img src="img/schema4.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width d-flex justify-content-between text-after-circle-gray">
+                    <div>
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Lorem ipsum dolor sit</h4>
+                        <p>
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--travel with us-->
+        <div class="travel-with-us">
+            <div class="content d-flex flex-column align-items-center">
+                <div class="waves"></div>
+                <h2>TRAVEL WITH US</h2>
+                <div class="full-width d-flex justify-content-between">
+                    <div class="position-relative">
+                        <div class="icon-stars icon-stars_4"></div>
+                        <img src="img/Layer%20108.png" alt="Carpathian">
+                        <span class="place-name">Carpathian</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
+                    <div class="position-relative">
+                        <div class="icon-stars icon-stars_5"></div>
+                        <img src="img/Layer%20109.png " alt="Alps">
+                        <span class="place-name">Alps</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
+                    <div class="position-relative">
+                        <div class="icon-stars icon-stars_5"></div>
+                        <img src="img/Layer%20111.png" alt="Pyrenees">
+                        <span class="place-name">Pyrenees</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
+                    <div class="position-relative">
+                        <div class="icon-stars icon-stars_5"></div>
+                        <img src="img/Layer%20116.png" alt="Rocky">
+                        <span class="place-name">Rocky</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
+                    <div class="position-relative">
+                        <div class="icon-stars icon-stars_3"></div>
+                        <img src="img/Layer%20117.png" alt="Kavkaz">
+                        <span class="place-name">Kavkaz</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--gallery-->
+        <div class="gallery">
+            <div class="content d-flex flex-column align-items-center">
+                <div class="waves"></div>
+                <h2>GALLERY</h2>
+            </div>
+        </div>
+        <!--partners-->
+        <div class="partners">
+            <div class="content row-space-between align-items-center">
+                <div>
+                    <img src="img/logo-g1.png">
+                </div>
+                <div>
+                    <img src="img/logo-g2.png">
+                </div>
+                <div>
+                    <img src="img/logo-g3.png">
+                </div>
+                <div>
+                    <img src="img/logo-g4.png">
+                </div>
+                <div>
+                    <img src="img/logo-g5.png">
+                </div>
+                <div>
+                    <img src="img/logo-g6.png">
+                </div>
+            </div>
+        </div>
+        <!--our clients say-->
+        <div class="clients-say">
+            <div class="content d-flex flex-column align-items-center">
+                <div class="waves"></div>
+                <h2>OUR CLIENTS SAY</h2>
+                <div class="d-flex align-items-between full-width">
+                    <div class="d-flex justify-content-between flex-column half-size">
+                        <span class="quote"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                        </p>
+                        <div  class="d-flex align-items-center">
+                            <img src="img/autor2.png">
+                            <span class="user user--name">Pavliv Yaroslav</span>
+                            <span class="user user--position">Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-column half-size">
+                        <span class="quote"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,amet, consectetur adipisicing elit,  sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed damet, consectetur adipisicing elit,amet, consectetur adipisicing elit,
+                        </p>
+                        <div  class="d-flex align-items-center">
+                            <img src="img/autor1.png">
+                            <span class="user user--name">John Scott</span>
+                            <span class="user user--position">The Fringe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form d-flex flex-column">
+                    <h2>
+                        CONTACTS
+                    </h2>
+                    <span>
+                        Sign up for our newsletter to receive updates
+                    </span>
+                    <form>
+                        <div class="form-group">
+                            <label for="contactName"></label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone"></label>
+                            <input type="text" class="form-control" id="contactPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail"></label>
+                            <input type="text" class="form-control" id="contactEmail" placeholder="E-mail">
+                        </div>
+                        <button type="submit" class="custom-button custom-button--blue custom-button--blue--full-width">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-
+        <div class="content d-flex justify-content-between align-items-center">
+            <span>All rights reserved 2015</span>
+            <div class="">
+                <a href="/"><img src="img/vk.png"></a>
+                <a href="/"><img src="img/facebook.png"></a>
+                <a href="/"><img src="img/twitter.png"></a>
+            </div>
+            <span>1 234 213 123</span>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

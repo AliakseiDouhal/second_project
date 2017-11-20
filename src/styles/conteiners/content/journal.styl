@@ -5,24 +5,15 @@
   background-color: rgb(255, 255, 255)
   opacity: 0.851
   box-shadow: 0 0 21px 0 rgba(6, 6, 6, 0.13)
-  width: 100%
+  max-width 1140px
   margin-top 70px
-  & >div
-    width 66%
-    min-width: 320px
-    /*
-    height 380px
-    */
-    /*&>div
-      width 50%*/
-  /*& img
-    max-width 480px*/
+  &:after
+    content: ""
+    clear: both
+    display: block
 
-.red
-  background red
-  width 50%
-  height 380px
-.black
-  background black
-  width 50%
-  height 380px
+  & >div
+    width 66.66%
+    min-width: 320px
+    &:last-child
+      width: 33.33%

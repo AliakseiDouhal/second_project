@@ -1,51 +1,82 @@
+.how-we-work
+  background-color: white
+  padding: 73px 0 90px 0
 
- .circle
-  width: 180px
-  height: 180px
-  background: #f0f3f6
-  border-radius: 180px
+.circle
+  border-radius: 100%
 
- .hexagon
-   position: relative
-   width: 115px
-   border-radius: 8px 4px
-   height: 66.40px
-   background-color: white
-   margin: 33.20px 0
-   box-shadow: 0 0 15px rgba(0,0,0,0.6)
+  &--grey
+    width: 180px
+    background: #f0f3f6
+    height: 180px
 
+  &--blue--small
+    display: flex
+    align-items: center
+    justify-content: center
+    color #60aeff
+    width: 50px
+    height: 50px
+    background: white
+    border solid 2px #60aeff
 
- .hexagon:before,
- .hexagon:after
-   content: ""
-   position: absolute
-   z-index: 1
-   width: 81.32px
-   height: 81.32px
-   -webkit-transform: scaleY(0.5774) rotate(-45deg)
-   -ms-transform: scaleY(0.5774) rotate(-45deg)
-   transform: scaleY(0.5774) rotate(-45deg)
-   background-color: inherit
-   left: 16.8414px
-   box-shadow: 0 0 15px rgba(0,0,0,0.6)
-   border-radius: 8px 4px
+.steps-padding
+  margin 75px 0 0
 
- .hexagon:before
-   top: -40.6586px
+.dotting-line
+  background url("/img/Shape-166.png") repeat-x center
+  width: calc(100% - 130px)
+  &--rotate
+    background url("/img/Shape-1661.png") repeat-y center
+    width: 2px
+    height: 50px
+    padding: 0 90px
 
+.hexagon
+  position: relative
+  width: 115px
+  height: 66.40px
+  background-color: white
+  margin: auto
+  top: 59px
+  left: 0
 
- .hexagon:after
-   bottom: -40.6586px
+  &:before,
+  &:after
+    content: ""
+    position: absolute
+    z-index: 1
+    width: 81.32px
+    height: 81.32px
+    -webkit-transform: scaleY(0.5774) rotate(-45deg)
+    -ms-transform: scaleY(0.5774) rotate(-45deg)
+    transform: scaleY(0.5774) rotate(-45deg)
+    background-color: inherit
+    left: 16.8414px
 
+  &:before
+    top: -40.6586px
 
- /*cover up extra shadows*/
- .hexagon span
-   display: block
-   position: absolute
-   top:0
-   left: 0
-   width:115px
-   height:66.3953px
-   z-index: 2
-   border-radius: 8px 4px
-   background: inherit
+  &:after
+    bottom: -40.6586px
+    box-shadow: 0 0 15px rgba(0,0,0,0.6)
+
+   /*cover up extra shadows*/
+  & span
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top:0
+    left: 0
+    width:115px
+    height:66.3953px
+    z-index: 2
+    background: inherit
+
+.text-after-circle-gray
+  &>div
+    max-width 180px
+  & p
+    text-align center
+    color #949494
