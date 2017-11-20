@@ -1,6 +1,24 @@
 .journal
   background-color: white
   padding: 73px 0 90px 0
+
+  &-title
+    display flex
+    flex-direction column
+    justify-content space-between
+    align-items center
+    padding 45px 25px
+    h4
+      text-transform: uppercase
+    span
+      font-size: 0.875rem
+      color: rgb(22,181,239)
+      font-weight: bold
+      &:last-child
+        font-size: 0.875rem
+        font-style: italic
+        color: rgb(33,33,33)
+
 .journal-board
   background-color: rgb(255, 255, 255)
   opacity: 0.851
@@ -17,3 +35,20 @@
     min-width: 320px
     &:last-child
       width: 33.33%
+      & div:last-child
+        height 380px
+
+.triangle
+  width: 0
+  height: 0
+  border-style: solid
+
+  &--top
+    border-width: 0 7.5px 10px 7.5px
+    border-color: transparent transparent #ffffff transparent
+  &--right
+    border-width: 5px 0 5px 15px
+    border-color: transparent transparent transparent #ffffff
+  &--left
+    border-width: 5px 15px 5px 0
+    border-color: transparent #ffffff transparent transparent
