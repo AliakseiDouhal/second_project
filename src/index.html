@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!--
     <header class="fixed-top" >
         <nav class="navbar navbar-expand-lg navbar-light  content">
             <a class="navbar-brand logo" href="#">
@@ -15,34 +16,35 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">OUR STORY<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#story">OUR STORY<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
+                        <a class="nav-link" href="#services">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">WORK</a>
+                        <a class="nav-link" href="#work">WORK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JOURNAL</a>
+                        <a class="nav-link" href="#journal">JOURNAL</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
-                <button class="custom-button custom-button--transparent" type="button" aria-label="Call us">
+                <button class="custom-button custom-button&#45;&#45;transparent" type="button" aria-label="Call us">
                     CALL US
                 </button>
             </div>
         </nav>
     </header>
+-->
 
     <div>
         <!--bg-header-->
-        <div class="bg-header">
+        <div id="story" class="bg-header">
             <div class="content flex-column-center">
                 <span>
                     TRAVEL WITH US
@@ -59,8 +61,8 @@
             </div>
         </div>
         <!--About Us-->
-        <div class="about-us">
-            <div class="content row-space-between" >
+        <div id="services" class="about-us">
+            <div class="wide-content row-space-between" >
                 <div class="about-us-text flex-column-center">
                     <div class="waves"></div>
                     <h4>
@@ -83,42 +85,48 @@
             </div>
         </div>
         <!--our journal-->
-        <div class="journal">
+        <div id="journal" class="journal">
             <div class="content d-flex flex-column align-items-center">
                 <div class="waves"></div>
                 <h2>OUR JOURNAL</h2>
-                <div class="journal-board">
-                    <div class="d-flex float-left">
-                        <div>
-                            <img src="img/trees.png">
+                <div class="journal-board d-flex">
+                    <div class="journal-left-block">
+                        <div class="d-flex journal-column-mobile">
+                            <div class="w-50">
+                                <img src="img/trees.png">
+                            </div>
+                            <div class="journal-title">
+                                <div class="triangle triangle--left"></div>
+                                <span>LOVE</span>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h4>
+                                <p>
+                                    You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+                                </p>
+                                <span>01</span>
+                            </div>
                         </div>
-                        <div class="journal-title">
-                            <span>LOVE</span>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h4>
-                            <p>
-                                You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
-                            </p>
-                            <span>01</span>
+                        <div class="d-flex journal-column-mobile">
+                            <div class="journal-title order-flex__first">
+                                <div class="triangle triangle--right"></div>
+                                <span>TREE</span>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h4>
+                                <p>
+                                    The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
+                                </p>
+                                <span>02</span>
+                            </div>
+                            <div class="w-50">
+                                <img src="img/mountains.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex float-left">
-                        <div class="journal-title">
-                            <span>TREE</span>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h4>
-                            <p>
-                                The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
-                            </p>
-                            <span>02</span>
-                        </div>
-                        <div>
-                            <img src="img/mountains.png">
-                        </div>
-                    </div>
-                    <div class="d-flex float-none flex-column ">
+                    <div class="d-flex flex-column journal-right-block">
                         <div>
                             <img src="img/water.png">
                         </div>
                         <div class="journal-title">
+                            <div class="triangle triangle--top triangle__hide"></div>
+                            <div class="triangle triangle--left triangle--desktop__hide"></div>
                             <span>WATER</span>
                             <h4>LITTLE PIECES OF OUR PROUDNESS</h4>
                             <p>
@@ -172,61 +180,68 @@
                     <div class="dotting-line--rotate"></div>
                     <div class="dotting-line--rotate"></div>
                 </div>
-                <div class="full-width d-flex justify-content-between">
-                    <div class="circle circle--grey">
-                        <div class="hexagon">
-                            <span>
-                                <img src="img/schema1.png">
-                            </span>
+                <div class="full-width d-flex justify-content-sm-between flex-row-wrap justify-content-around">
+                    <div>
+                        <div class="circle circle--grey">
+                            <div class="hexagon">
+                                <span>
+                                    <img src="img/schema1.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class=" text-after-circle-gray">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <p>
+                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
                         </div>
                     </div>
-                    <div class="circle circle--grey">
-                        <div class="hexagon">
-                            <span>
-                                <img src="img/schema2.png">
-                            </span>
+                    <div>
+                        <div class="circle circle--grey">
+                            <div class="hexagon">
+                                <span>
+                                    <img src="img/schema2.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class=" text-after-circle-gray">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <p>
+                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
                         </div>
                     </div>
-                    <div class="circle circle--grey">
-                        <div class="hexagon">
-                            <span>
-                                <img src="img/schema3.png">
-                            </span>
+                    <div>
+                        <div class="circle circle--grey">
+                            <div class="hexagon">
+                                <span>
+                                    <img src="img/schema3.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class=" text-after-circle-gray">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <p>
+                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
                         </div>
                     </div>
-                    <div class="circle circle--grey">
-                        <div class="hexagon">
-                            <span>
-                                <img src="img/schema4.png">
-                            </span>
+                    <div>
+                        <div class="circle circle--grey">
+                            <div class="hexagon">
+                                <span>
+                                    <img src="img/schema4.png">
+                                </span>
+                            </div>
+                        </div>
+                        <div class=" text-after-circle-gray">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <p>
+                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="full-width d-flex justify-content-between text-after-circle-gray">
-                    <div>
-                        <h4>Lorem ipsum dolor sit</h4>
-                        <p>
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Lorem ipsum dolor sit</h4>
-                        <p>
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Lorem ipsum dolor sit</h4>
-                        <p>
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div>
-                        <h4>Lorem ipsum dolor sit</h4>
-                        <p>
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -235,7 +250,7 @@
             <div class="content d-flex flex-column align-items-center">
                 <div class="waves"></div>
                 <h2>TRAVEL WITH US</h2>
-                <div class="full-width d-flex justify-content-between">
+                <div class="full-width d-flex justify-content-between flex-row-wrap space-around-responsive">
                     <div class="position-relative">
                         <div class="icon-stars icon-stars_4"></div>
                         <img src="img/Layer%20108.png" alt="Carpathian">
@@ -294,6 +309,27 @@
             <div class="content d-flex flex-column align-items-center">
                 <div class="waves"></div>
                 <h2>GALLERY</h2>
+                <!--<div class="masonry">
+                    <div class="item">
+                        <img src="img/Layer%20130.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/Layer%20128.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/Layer%20129.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/Layer%20127.png">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/Layer%20125.png">
+                    </div>
+                    <div class="item">
+                        <img src="img/Layer%20131.png">
+                    </div>
+                </div>-->
             </div>
         </div>
         <!--partners-->
@@ -324,7 +360,7 @@
             <div class="content d-flex flex-column align-items-center">
                 <div class="waves"></div>
                 <h2>OUR CLIENTS SAY</h2>
-                <div class="d-flex align-items-between full-width">
+                <div class="d-flex align-items-between full-width flex-row-wrap">
                     <div class="d-flex justify-content-between flex-column half-size">
                         <span class="quote"></span>
                         <p>
@@ -348,7 +384,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form d-flex flex-column">
+                <div id="contact" class="contact-form d-flex flex-column">
                     <h2>
                         CONTACTS
                     </h2>
@@ -376,7 +412,7 @@
     </div>
 
     <footer>
-        <div class="content d-flex justify-content-between align-items-center">
+        <div class="content d-flex justify-content-sm-between flex-row-wrap justify-content-around align-items-center">
             <span>All rights reserved 2015</span>
             <div class="">
                 <a href="/"><img src="img/vk.png"></a>

@@ -12,10 +12,16 @@ h1,h2,h3,h4
   text-align center
 
 .content
-  max-width: 1440px
+  max-width: 1162px
   margin: auto
-  padding 0 20px
+  padding 0 10px
   height 100%
+
+.wide-content
+  max-width 1460px
+  margin auto
+  height 100%
+  padding-left 10%
 
 .flex-row-wrap
   flex-flow: row wrap
@@ -41,7 +47,7 @@ h1,h2,h3,h4
   white-space: nowrap
   vertical-align: middle
   user-select: none
-  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+  transition: background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out
   border-radius: 4px
 
   &--transparent
@@ -52,10 +58,25 @@ h1,h2,h3,h4
     width: 147px
     height: 40px
     background none
+    &:hover
+      background-color: #36aeea
+      color: white
+    &:active
+      color: white
+      background-color: #28769e
 
   &--blue
-    background-color: rgb(54, 174, 234)
+    background-color: #36aeea
     color: white
+    &:hover
+      border-width: 3px
+      background none
+      border-color: rgb(54, 174, 234)
+      color: rgb(54, 174, 234)
+      border-style: solid
+    &:active
+      color: white
+      background-color: #28769e
 
     &--middle
       width: 253px
@@ -80,4 +101,6 @@ h1,h2,h3,h4
 .full-width
   width: 100%
 
-
+@media only screen and (max-width: 1460px)
+  .wide-content
+    padding-left calc(width - 1162px)

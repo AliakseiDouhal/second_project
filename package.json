@@ -26,6 +26,7 @@
     "jquery-ui": "^1.12.1",
     "jquery-ui-dist": "^1.12.1",
     "jquery-ui-touch-punch": "^0.2.3",
+    "masonry-layout": "^4.2.0",
     "pump": "^1.0.2"
   },
   "scripts": {

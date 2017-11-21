@@ -29,6 +29,7 @@ var paths = {
     scripts: [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/jquery-ui-dist/jquery-ui.js',
+        'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         'node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
         'src/js/*.js'
