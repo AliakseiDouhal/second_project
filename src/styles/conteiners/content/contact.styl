@@ -1,8 +1,11 @@
 .contact
   background url("/img/offer-bg.jpg") no-repeat center center
-  padding: 73px 0 90px 0
+  background-size: cover
+  padding: 145px 0 250px 0
+  min-height 653px
   h2
     text-align:left !important
+    padding-bottom 30px
   p
     width: 50%
   form
@@ -16,9 +19,20 @@
       width: 28%
 
 .secure-text
-  padding-left: 3px
+  padding-left: 19px
   font-size: 0.875rem
   color: rgb(54, 174, 234)
+  position relative
+
+span.secure-text:before
+  content: ""
+  background: url(/img/locked.png)
+  position: absolute
+  height: 16px
+  width: 14px
+  top: 0
+  left: 0
+
 
 @media only screen and (max-width: 600px)
   .contact

@@ -4,20 +4,24 @@ html
 
 body
   margin: 0
-  font-family: OpenSansCondensedLight
+  font-family: OpenSansRegular
   font-weight: normal
 
 h1,h2,h3,h4
-  font-family: OpenSansCondensedBold
+  font-family: OpenSansBold
   text-align center
+  position relative
 
-.content
+li
+  list-style none
+
+.container
   max-width: 1162px
   margin: auto
   padding 0 10px
   height 100%
 
-.wide-content
+.wide-container
   max-width 1460px
   margin auto
   height 100%
@@ -92,15 +96,15 @@ h1,h2,h3,h4
       font-size: 1rem
       font-weight: bold
 
-.waves
+.waves:before
+  content ""
   background url("/img/wave.png") repeat-x
   width: 88px
   height: 7px
-  padding-bottom: 40px
+  position: absolute
+  left: 0
+  top: -40px
 
 .full-width
   width: 100%
 
-@media only screen and (max-width: 1460px)
-  .wide-content
-    padding-left calc(width - 1162px)

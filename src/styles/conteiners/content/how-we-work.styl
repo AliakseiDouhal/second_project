@@ -1,6 +1,7 @@
 .how-we-work
   background-color: white
-  padding: 73px 0 90px 0
+  min-height 646px
+  padding: 73px 0 0 0
 
 .circle
   border-radius: 100%
@@ -79,10 +80,49 @@
   & p
     text-align center
     color #949494
+ul.steps
+  display flex
+  position relative
+  padding-left 0
+  padding-top 75px
+  justify-content space-between
+  width 100%
+  li
+    list-style none
+    position relative
 
-@media only screen and (max-width: 752px)
-  .dotting-line
-    display none !important
-    &--rotate
-      display none
+@media only screen and (min-width: 756px)
+  ul.steps
 
+    &:before
+      content ""
+      background url("/img/Shape-166.png") repeat-x center
+      position: absolute
+      top: 49px
+      height: 2px
+      left: 93px
+      width: calc(100% - 202px)
+    li
+
+      &:after
+        background: url(/img/Shape-1661.png) repeat-y center
+        position: absolute
+        width: 2px
+        height: 50px
+        top: 0
+        left: 50%
+        content: " "
+      &:before
+        content: "1"
+        position relative
+        display: flex
+        align-items: center
+        justify-content: center
+        color #60aeff
+        left: 37%
+        top: -50px
+        width: 50px
+        height: 50px
+        background: white
+        border solid 2px #60aeff
+        border-radius: 100%

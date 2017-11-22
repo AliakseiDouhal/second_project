@@ -32,6 +32,7 @@ var paths = {
         'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
         'node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.js',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'node_modules/swiper/dist/js/swiper.min.js',
         'src/js/*.js'
     ],
     stylus: [
@@ -42,6 +43,7 @@ var paths = {
     css: [
         'node_modules/jquery-ui-dist/jquery-ui.min.css',
         'node_modules/bootstrap/dist/css/bootstrap.css',
+        'node_modules/swiper/dist/css/swiper.min.css',
         'src/styles/main.styl'
     ]
 };
