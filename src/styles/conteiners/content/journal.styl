@@ -3,6 +3,9 @@
   min-height 1066px
   padding: 73px 0 90px 0
 
+  h2
+    span
+      display block
   img
     width 100%
 
@@ -13,10 +16,14 @@
     flex-direction column
     justify-content space-between
     align-items center
-    padding 45px 25px
+    padding 35px 25px
+
+    p
+      font-size 0.875rem
 
     h4
       text-transform: uppercase
+      font-size 1rem
 
     span
       font-size: 0.875rem
@@ -44,7 +51,6 @@
   & >div
     &:first-child
       width 66.66%
-      min-width: 320px
 
       &>div
         width 100%
@@ -117,8 +123,13 @@
 
 @media only screen and (max-width: 600px)
   .journal
+    &-board
+      width 90%
+    &-left-block>div
+      box-shadow: 0 0 21px 0 rgba(7,7,7,.23);
     &-right-block
       flex-direction column !important
+      box-shadow: 0 0 21px 0 rgba(7,7,7,.23);
     &-column-mobile
       flex-direction  column
     &-title
@@ -132,6 +143,7 @@
 
     .w-50
       width auto !important
+      margin: auto
 
     &-board
 

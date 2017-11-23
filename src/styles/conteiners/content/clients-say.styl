@@ -4,10 +4,15 @@
   min-height: 1295px
   background-size: cover
 
+  & .col-md-6:first-child
+    padding-bottom 30px
+
   h2
     padding-bottom: 82px
+    span
+      display block
   p
-    color #c9c9c9
+    color black
 
 .quote:before
   height: 22px
@@ -16,7 +21,7 @@
   margin-bottom: 11px
 
 .half-size
-  width 50%
+  width 49%
 
 .user
   font-size: 1rem
@@ -38,14 +43,28 @@
   max-width: 515px
   width 100%
 
+  label
+    display block
+    margin 0
+
   span
       text-align: center
 
   h2
-    padding 10px 0
+    padding 20px 0
     font-size: 2.25rem
     color: rgb(54, 174, 234)
     line-height: 1.2
+
+  button
+    margin: 0 20px 50px 20px
+    width: calc(100% - 40px)
+
+  .form-group
+    padding 0 20px
+    margin-bottom: 20px
+    &:first-child
+      margin-top 40px
 
 input.form-control
   height: 60px

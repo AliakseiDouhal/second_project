@@ -3,6 +3,10 @@
   min-height 646px
   padding: 73px 0 0 0
 
+  h2
+    span
+      display block
+
 .circle
   border-radius: 100%
 
@@ -84,7 +88,7 @@ ul.steps
   display flex
   position relative
   padding-left 0
-  padding-top 75px
+  padding-top 0
   justify-content space-between
   width 100%
   li
@@ -93,7 +97,7 @@ ul.steps
 
 @media only screen and (min-width: 756px)
   ul.steps
-
+    padding-top 75px
     &:before
       content ""
       background url("/img/Shape-166.png") repeat-x center

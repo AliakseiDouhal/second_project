@@ -4,8 +4,10 @@
   position relative
   h4
     text-align left
+    span
+      display block
 
-  &:after
+  &:before
     content: " "
     background: url("/img/map_dotted.png") no-repeat center center
     background-size: contain
@@ -18,7 +20,7 @@
   &-text
     position relative
     padding-top 205px
-    width: 29%
+    width: 32%
     p
       font-size: 1rem
       color: rgb(148, 148, 148)
@@ -28,15 +30,56 @@
 .img-block
   z-index 1
   position absolute
+  width: 50%
+  height: 100%
   top: 0
   right 0
 
   & img
     position absolute
     &:first-child
-      max-width 800px
+      max-width 100%
       top: -40px
       right: 0
     &:last-child
-      top: 252px
-      right: 540px
+      top: 244px
+      right: 61%
+      max-width: 60%
+
+@media only screen and (max-width: 991px)
+  .img-block
+    top: 100px
+    & img
+      &:first-child
+        top: 0
+
+@media only screen and (max-width: 767px)
+  .about-us
+    min-height: 557px
+
+  .img-block
+    width 70%
+    top: 85%
+    & img
+      position absolute
+      &:first-child
+        max-width 100%
+        top: 0
+        right: 0
+      &:last-child
+        display none
+
+  .about-us-text
+    padding-top: 40px
+    width 100%
+
+@media only screen and (max-width: 575px)
+  .img-block
+    display none
+
+  .about-us
+    min-height: 400px
+    h4
+      text-align center
+    button
+      width 100%

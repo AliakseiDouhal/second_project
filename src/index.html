@@ -12,8 +12,10 @@
             <a class="navbar-brand logo" href="#">
                 <span>Moun</span>tains
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span> </span>
+                <span> </span>
+                <span> </span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
@@ -66,7 +68,7 @@
             <div class="container">
                 <div class="about-us-text flex-column-center">
                     <h4 class="waves">
-                        ABOUT US
+                        <span>ABOUT US</span>
                     </h4>
                     <p>
                         Aliquam sed posuere urna, et gravida nisl. Praesent  interdum nisl libero, pretium egestas purus eleifend
@@ -77,19 +79,17 @@
                     </button>
 
                 </div>
-
-                <div class="img-block">
-                    <img src="img/Curves-3.jpg">
-                    <img src="img/16047839768_3d53d0b471_z.jpg">
-                </div>
             </div>
-
+            <div class="img-block">
+                <img src="img/Curves-3.jpg">
+                <img src="img/16047839768_3d53d0b471_z.jpg">
+            </div>
         </div>
     </div>
     <!--our journal-->
     <div id="journal" class="journal">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="waves">OUR JOURNAL</h2>
+            <h2 class="waves"><span>OUR JOURNAL</span></h2>
             <div class="journal-board d-flex">
                 <div class="journal-left-block">
                     <div class="d-flex journal-column-mobile">
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column journal-right-block">
-                    <div>
+                    <div class="last-col-img">
                         <img src="img/water.png">
                     </div>
                     <div class="journal-title">
@@ -142,7 +142,7 @@
     <!--wanna go-->
     <div class="contact">
         <div class="container">
-            <h2 class="waves">DO YOU WANNA GO?</h2>
+            <h2 class="waves"><span>DO YOU WANNA GO?</span></h2>
             <p>
                 Aliquam sed posuere urna, et gravida nisl. Praesent
                 interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
@@ -166,7 +166,7 @@
     <!--how-we-work-->
     <div class="how-we-work">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="waves">HOW WE WORK</h2>
+            <h2 class="waves"><span>HOW WE WORK</span></h2>
             <ul class="steps d-flex justify-content-sm-between flex-row-wrap justify-content-around">
                 <li>
                     <div class="circle circle--grey">
@@ -234,55 +234,75 @@
     <!--travel with us-->
     <div class="travel-with-us">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="waves">TRAVEL WITH US</h2>
+            <h2 class="waves"><span>TRAVEL WITH US</span></h2>
             <div class="full-width d-flex justify-content-between flex-row-wrap center-responsive">
-                <div class="position-relative">
-                    <div class="icon-stars icon-stars_4"></div>
+                <div class="position-relative place">
                     <img src="img/Layer%20108.png" alt="Carpathian">
-                    <span class="place-name">Carpathian</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
+                    <div class="icon-stars">
+                        <div class="stars" style="width: 80%"></div>
+                    </div>
+                    <div class="place-info">
+                        <span class="place-name">Carpathian</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
                     <span class="old-price">3120$</span>
                     <span class="actual-price">$800</span>
                 </div>
-                <div class="position-relative">
-                    <div class="icon-stars icon-stars_5"></div>
+                <div class="position-relative place">
                     <img src="img/Layer%20109.png " alt="Alps">
-                    <span class="place-name">Alps</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
+                    <div class="icon-stars">
+                        <div class="stars" style="width: 100%"></div>
+                    </div>
+                    <div class="place-info">
+                        <span class="place-name">Alps</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
                     <span class="old-price">3120$</span>
                     <span class="actual-price">$800</span>
                 </div>
-                <div class="position-relative">
-                    <div class="icon-stars icon-stars_5"></div>
+                <div class="position-relative place">
                     <img src="img/Layer%20111.png" alt="Pyrenees">
-                    <span class="place-name">Pyrenees</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
+                    <div class="icon-stars ">
+                        <div class="stars" style="width: 100%"></div>
+                    </div>
+                    <div class="place-info">
+                        <span class="place-name">Pyrenees</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
                     <span class="old-price">3120$</span>
                     <span class="actual-price">$800</span>
                 </div>
-                <div class="position-relative">
-                    <div class="icon-stars icon-stars_5"></div>
+                <div class="position-relative place">
                     <img src="img/Layer%20116.png" alt="Rocky">
-                    <span class="place-name">Rocky</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
+                    <div class="icon-stars">
+                        <div class="stars" style="width: 100%"></div>
+                    </div>
+                    <div class="place-info">
+                        <span class="place-name">Rocky</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
                     <span class="old-price">3120$</span>
                     <span class="actual-price">$800</span>
                 </div>
-                <div class="position-relative">
-                    <div class="icon-stars icon-stars_3"></div>
+                <div class="position-relative place">
                     <img src="img/Layer%20117.png" alt="Kavkaz">
-                    <span class="place-name">Kavkaz</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
+                    <div class="icon-stars">
+                        <div class="stars" style="width: 80%"></div>
+                    </div>
+                    <div class="place-info">
+                        <span class="place-name">Kavkaz</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </div>
                     <span class="old-price">3120$</span>
                     <span class="actual-price">$800</span>
                 </div>
@@ -292,7 +312,7 @@
     <!--gallery-->
     <div class="gallery">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="waves">GALLERY</h2>
+            <h2 class="waves"><span>GALLERY</span></h2>
             <!--<div class="masonry js-masonry " data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 3 }'>
                 <div class="grid-sizer"></div>
                 <div class="item">
@@ -343,10 +363,9 @@
     <!--our clients say-->
     <div class="clients-say">
         <div class="container d-flex flex-column align-items-center">
-
-            <h2 class="waves">OUR CLIENTS SAY</h2>
-            <div class="d-flex align-items-center full-width flex-row-wrap">
-                <div class="d-flex justify-content-between flex-column half-size">
+            <h2 class="waves"><span>OUR CLIENTS SAY</span></h2>
+            <div class="d-flex align-items-start justify-content-between full-width flex-row-wrap">
+                <div class="d-flex col-md-6	 justify-content-between flex-column ">
                     <span class="quote"></span>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
@@ -357,7 +376,7 @@
                         <span class="user user--position">Web Designer</span>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between flex-column half-size">
+                <div class="d-flex col-md-6	 justify-content-between flex-column">
                     <span class="quote"></span>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,amet, consectetur adipisicing elit,  sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed damet, consectetur adipisicing elit,amet, consectetur adipisicing elit,
@@ -371,7 +390,7 @@
             </div>
             <div id="contact" class="contact-form d-flex flex-column">
                 <h2>
-                    CONTACTS
+                    <span>CONTACTS</span>
                 </h2>
                 <span>
                     Sign up for our newsletter to receive updates

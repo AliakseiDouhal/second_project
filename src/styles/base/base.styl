@@ -10,7 +10,6 @@ body
 h1,h2,h3,h4
   font-family: OpenSansBold
   text-align center
-  position relative
 
 li
   list-style none
@@ -53,6 +52,7 @@ li
   user-select: none
   transition: background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out
   border-radius: 4px
+  cursor pointer
 
   &--transparent
     border-width: 3px
@@ -98,12 +98,12 @@ li
 
 .waves:before
   content ""
+  display inline-block
+  left 0
   background url("/img/wave.png") repeat-x
   width: 88px
   height: 7px
-  position: absolute
-  left: 0
-  top: -40px
+  padding-bottom: 40px
 
 .full-width
   width: 100%
