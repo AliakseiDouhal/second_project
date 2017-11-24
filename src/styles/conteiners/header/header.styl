@@ -1,5 +1,6 @@
 header
   height: 90px
+  transition: background-color .4s ease-in-out
   background-color: rgba(255, 255, 255, 0.21)
 
   .custom-button
@@ -11,6 +12,10 @@ header
   &-nav
     margin-left: 50px
 
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+    border-bottom: 2px solid #36aeea
+    color: #9daeb6
 
 .nav-link
   font-size: 0.75rem
@@ -29,6 +34,7 @@ header
 
 .navbar-toggler
   position relative
+  border: none
   &:focus,
   &:active
     outline: 0
@@ -75,7 +81,7 @@ header
   .responsive-navigation
     background-color white
     top: -3px
-    margin 0 -10px
+    margin 0 -15px
     width 100%
     position relative
     ul
@@ -84,4 +90,7 @@ header
       li
         height 45px
 
+@media only screen and (max-width: 600px)
+ header
+   background-color: white !important
 

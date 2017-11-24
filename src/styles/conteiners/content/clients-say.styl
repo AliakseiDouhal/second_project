@@ -35,7 +35,7 @@
     font-weight normal
 
 .contact-form
-  margin-top 60px
+  margin-top 140px
   margin-bottom 20px
   padding 10px
   border-radius: 8px
@@ -75,11 +75,17 @@ input.form-control
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #777
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px #777
 
+@media only screen and (max-width: 990px)
+  .clients-say
+    h2
+      padding-bottom 30px
+
 @media only screen and (max-width: 600px)
   .clients-say
     padding-top 40px
 
     h2
+      font-size 1.5rem
       padding-bottom 25px
 
     .half-size
@@ -87,6 +93,12 @@ input.form-control
       &:first-child
         padding-bottom 10px
 
+    .contact-form
+      .form-group
+        padding 0 0
+      button
+        width: 100%
+        margin 0 0 50px
 
 
 

@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="fixed-top" >
+    <header id="header" class="fixed-top" >
         <nav class="navbar navbar-expand-lg navbar-light  container">
             <a class="navbar-brand logo" href="#">
                 <span>Moun</span>tains
@@ -19,7 +19,7 @@
             </button>
             <div class="responsive-navigation collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#story">OUR STORY<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -92,44 +92,56 @@
             <h2 class="waves"><span>OUR JOURNAL</span></h2>
             <div class="journal-board d-flex">
                 <div class="journal-left-block">
-                    <div class="d-flex journal-column-mobile">
-                        <div class="w-50">
-                            <img src="img/trees.png">
+                    <div class="d-flex journal-column-mobile ">
+                        <div class="w-50 love">
+                            <a href="/">
+                                <img src="img/trees.png">
+                            </a>
                         </div>
                         <div class="journal-title">
                             <div class="triangle triangle--left"></div>
                             <span>LOVE</span>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h4>
+                            <a href="/">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h4>
+                            </a>
                             <p>
                                 You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
                             </p>
                             <span>01</span>
                         </div>
                     </div>
-                    <div class="d-flex journal-column-mobile">
+                    <div class="d-flex journal-column-mobile ">
                         <div class="journal-title order-flex__first">
                             <div class="triangle triangle--right"></div>
                             <span>TREE</span>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h4>
+                            <a href="/">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h4>
+                            </a>
                             <p>
                                 The way to a successful brand is hard, but always very interesting. Share the full story of your project – from the very first day until now.
                             </p>
                             <span>02</span>
                         </div>
-                        <div class="w-50">
-                            <img src="img/mountains.png">
+                        <div class="w-50 tree">
+                            <a href="/">
+                                <img src="img/mountains.png">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column journal-right-block">
-                    <div class="last-col-img">
-                        <img src="img/water.png">
+                <div class="d-flex flex-column journal-right-block ">
+                    <div class="last-col-img water">
+                        <a href="/">
+                            <img src="img/water.png">
+                        </a>
                     </div>
                     <div class="journal-title">
                         <div class="triangle triangle--top triangle__hide"></div>
                         <div class="triangle triangle--left triangle--desktop__hide"></div>
                         <span>WATER</span>
-                        <h4>LITTLE PIECES OF OUR PROUDNESS</h4>
+                        <a href="/">
+                            <h4>LITTLE PIECES OF OUR PROUDNESS</h4>
+                        </a>
                         <p>
                             What do you do better than your competitors? What are you proud of? What details and advantages of your product you want people to know about?
                         </p>
@@ -168,7 +180,7 @@
         <div class="container d-flex flex-column align-items-center">
             <h2 class="waves"><span>HOW WE WORK</span></h2>
             <ul class="steps d-flex justify-content-sm-between flex-row-wrap justify-content-around">
-                <li>
+                <li class="step-1">
                     <div class="circle circle--grey">
                         <div class="hexagon">
                         <span>
@@ -183,7 +195,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="step-2">
                     <div class="circle circle--grey">
                         <div class="hexagon">
                         <span>
@@ -198,7 +210,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="step-3">
                     <div class="circle circle--grey">
                         <div class="hexagon">
                         <span>
@@ -213,7 +225,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="step-4">
                     <div class="circle circle--grey">
                         <div class="hexagon">
                         <span>
@@ -247,8 +259,10 @@
                             Lorem ipsum dolor sit amet, consectetur
                         </p>
                     </div>
-                    <span class="old-price">3120$</span>
-                    <span class="actual-price">$800</span>
+                    <div class="price">
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
                 </div>
                 <div class="position-relative place">
                     <img src="img/Layer%20109.png " alt="Alps">
@@ -261,8 +275,10 @@
                             Lorem ipsum dolor sit amet, consectetur
                         </p>
                     </div>
-                    <span class="old-price">3120$</span>
-                    <span class="actual-price">$800</span>
+                    <div class="price">
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
                 </div>
                 <div class="position-relative place">
                     <img src="img/Layer%20111.png" alt="Pyrenees">
@@ -275,8 +291,10 @@
                             Lorem ipsum dolor sit amet, consectetur
                         </p>
                     </div>
-                    <span class="old-price">3120$</span>
-                    <span class="actual-price">$800</span>
+                    <div class="price">
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
                 </div>
                 <div class="position-relative place">
                     <img src="img/Layer%20116.png" alt="Rocky">
@@ -289,8 +307,10 @@
                             Lorem ipsum dolor sit amet, consectetur
                         </p>
                     </div>
-                    <span class="old-price">3120$</span>
-                    <span class="actual-price">$800</span>
+                    <div class="price">
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
                 </div>
                 <div class="position-relative place">
                     <img src="img/Layer%20117.png" alt="Kavkaz">
@@ -303,8 +323,10 @@
                             Lorem ipsum dolor sit amet, consectetur
                         </p>
                     </div>
-                    <span class="old-price">3120$</span>
-                    <span class="actual-price">$800</span>
+                    <div class="price">
+                        <span class="old-price">3120$</span>
+                        <span class="actual-price">$800</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -17,6 +17,12 @@
     justify-content space-between
     align-items center
     padding 35px 25px
+    a
+      h4
+        color black
+        &:hover
+          color #16b5ef
+          text-decoration none
 
     p
       font-size 0.875rem
@@ -92,6 +98,35 @@
     border-width: 10px 15px 10px 0
     border-color: transparent #ffffff transparent transparent
 
+.icon-under-img
+  content: ""
+  position absolute
+  top: 0
+
+.tree, .love, .water
+  position relative
+
+.tree:before
+  @extend .icon-under-img
+  background url("/img/Vector Smart Object1.png") no-repeat center center
+  width 50%
+  right 0
+  height 100%
+
+.love:before
+  @extend .icon-under-img
+  background url("/img/Vector Smart Object2.png") no-repeat center center
+  width 100%
+  height 100%
+  left: 0
+
+.water:before
+  @extend .icon-under-img
+  background url("/img/Vector Smart Object3.png") no-repeat center center
+  height 50%
+  width 100%
+  left: 0
+
 @media only screen and (max-width: 980px)
   .journal-title
     padding: 25px 9px
@@ -101,6 +136,7 @@
 
   .journal-board
     flex-flow column
+    margin-top: 40px
     & >div
       &:first-child
         width 100%
@@ -125,10 +161,14 @@
   .journal
     padding-top 40px
 
+    h2
+      font-size 1.5rem
+
     &-board
-      width 90%
+      width 100%
       margin-top 30px
     &-left-block>div
+      margin-bottom 15px
       box-shadow: 0 0 21px 0 rgba(7,7,7,.23);
     &-right-block
       flex-direction column !important
@@ -141,12 +181,11 @@
       margin auto
       padding: 25px 15px
     img
-      max-width 300px
+      max-width 100%
       width 100%
 
     .w-50
       width auto !important
-      margin: auto
 
     &-board
 
@@ -157,7 +196,6 @@
 
           &>div
             width auto
-            margin auto
 
           & div:last-child
             max-width 320px
@@ -169,16 +207,11 @@
     order 1
 
   .triangle
+    &--top
+      display none
 
     &--right
-      top: -15px
-      left: 60px
-      border-width: 0 10px 15px 10px
-      border-color: transparent transparent #ffffff transparent
+      display none
 
     &--left
-      top: -15px
-      left: 60px
-      border-width: 0 10px 15px 10px
-      border-color: transparent transparent #ffffff transparent
-
+      display none

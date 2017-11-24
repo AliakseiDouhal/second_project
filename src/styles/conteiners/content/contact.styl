@@ -1,8 +1,10 @@
 .contact
   background url("/img/offer-bg.jpg") no-repeat center center
   background-size: cover
-  padding: 145px 0 250px 0
+  padding-top: 145px
   min-height 653px
+  label
+    display block
   h2
     text-align:left !important
     padding-bottom 30px
@@ -35,6 +37,10 @@ span.secure-text:before
   top: 2px
   left: 0
 
+@media only screen and (max-width: 991px)
+  .contact
+    form
+      width 100%
 
 @media only screen and (max-width: 600px)
   .contact
@@ -45,10 +51,11 @@ span.secure-text:before
 
     h2
       text-align center !important
+      font-size 1.5rem
 
     form .form-group
-      margin-bottom 10px
-      width: 50%
+      margin-bottom 25px
+      width: 100%
 
     p
       width 100%
@@ -58,5 +65,6 @@ span.secure-text:before
       justify-content center
 
       button
-        width 50%
+        width 100%
+
 

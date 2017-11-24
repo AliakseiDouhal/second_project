@@ -96,6 +96,20 @@ ul.steps
     position relative
 
 @media only screen and (min-width: 756px)
+  .steps-numeration
+      position relative
+      display: flex
+      align-items: center
+      justify-content: center
+      color #60aeff
+      left: 37%
+      top: -50px
+      width: 50px
+      height: 50px
+      background: white
+      border solid 2px #60aeff
+      border-radius: 100%
+
   ul.steps
     padding-top 75px
     &:before
@@ -116,20 +130,21 @@ ul.steps
         top: 0
         left: 50%
         content: " "
-      &:before
+      &.step-1:before
         content: "1"
-        position relative
-        display: flex
-        align-items: center
-        justify-content: center
-        color #60aeff
-        left: 37%
-        top: -50px
-        width: 50px
-        height: 50px
-        background: white
-        border solid 2px #60aeff
-        border-radius: 100%
+        @extend .steps-numeration
+
+      &.step-2:before
+        content: "2"
+        @extend .steps-numeration
+
+      &.step-3:before
+        content: "3"
+        @extend .steps-numeration
+
+      &.step-4:before
+        content: "4"
+        @extend .steps-numeration
 
 @media only screen and (max-width: 600px)
   .how-we-work
@@ -137,3 +152,16 @@ ul.steps
 
     h2
       padding-bottom 25px
+      font-size 1.5rem
+
+@media only screen and (min-width: 560px) and (max-width: 767px )
+  .how-we-work
+    padding-top 40px
+    h2
+      padding-bottom 25px
+  ul.steps
+    li
+      width 50%
+      display flex
+      flex-direction column
+      align-items center

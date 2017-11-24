@@ -12,3 +12,13 @@ var slider = new Swiper('.swiper-container', {
         }
     }
 });
+
+window.onscroll = function() {
+    var header = document.getElementById('header');
+    if (window.pageYOffset > 90) {
+        header.style.cssText="background-color: white;";
+    }
+    else {
+        header.style.cssText="background-color: rgba(255,255,255,.21);";
+    }
+};
