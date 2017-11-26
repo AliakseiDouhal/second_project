@@ -102,30 +102,28 @@
   content: ""
   position absolute
   top: 0
+  left: 0
+  width 100%
+  height 100%
 
 .tree, .love, .water
   position relative
+  display block
 
 .tree:before
   @extend .icon-under-img
   background url("/img/Vector Smart Object1.png") no-repeat center center
-  width 50%
-  right 0
-  height 100%
+
 
 .love:before
   @extend .icon-under-img
   background url("/img/Vector Smart Object2.png") no-repeat center center
-  width 100%
-  height 100%
-  left: 0
+
 
 .water:before
   @extend .icon-under-img
   background url("/img/Vector Smart Object3.png") no-repeat center center
-  height 50%
-  width 100%
-  left: 0
+
 
 @media only screen and (max-width: 980px)
   .journal-title

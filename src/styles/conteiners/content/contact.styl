@@ -13,14 +13,19 @@
   p
     width: 50%
   form
-    width: 75%
-    padding-bottom: 10px
+    width: 100%
     .form-group
       width: 36%
     input
       width: 100% !important
     button
       width: 28%
+
+.form-wrapper
+  width 75%
+  background white
+  padding 3px
+  margin-bottom: 10px
 
 .secure-text
   padding-left: 19px
@@ -39,7 +44,7 @@ span.secure-text:before
 
 @media only screen and (max-width: 991px)
   .contact
-    form
+    .form-wrapper
       width 100%
 
 @media only screen and (max-width: 600px)
@@ -52,6 +57,8 @@ span.secure-text:before
     h2
       text-align center !important
       font-size 1.5rem
+    .form-wrapper
+      background-color transparent
 
     form .form-group
       margin-bottom 25px
@@ -66,5 +73,8 @@ span.secure-text:before
 
       button
         width 100%
+
+@media only screen and (min-width: 600px)
+  
 
 
