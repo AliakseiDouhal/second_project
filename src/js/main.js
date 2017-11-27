@@ -8,7 +8,7 @@ $(".nav-link").click(function(e) {
 });
 
 var slider = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 6,
     breakpoints: {
         600:{
             slidesPerView: 3
@@ -28,7 +28,10 @@ window.onscroll = function() {
 
 $('.grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 1
+    columnWidth: 20,
+    horizontalOrder: true
+
+
 
 
 });
