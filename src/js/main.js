@@ -29,6 +29,7 @@ window.onscroll = function() {
 $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: 20,
+    gutter: 5,
     horizontalOrder: true
 
 
