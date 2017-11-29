@@ -16,7 +16,7 @@
     flex-direction column
     justify-content space-between
     align-items center
-    padding 35px 25px
+    padding 40px 25px
     a
       h4
         color black
@@ -32,7 +32,7 @@
       font-size 1rem
 
     span
-      font-size: 0.875rem
+      font-size: 0.6875rem
       color: rgb(22,181,239)
       font-weight: bold
       &:last-child
@@ -112,18 +112,22 @@
 
 .tree:before
   @extend .icon-under-img
-  background url("/img/Vector Smart Object1.png") no-repeat center center
+  background url("/img/Vector Smart Object3.png") no-repeat center center
 
 
 .love:before
   @extend .icon-under-img
-  background url("/img/Vector Smart Object2.png") no-repeat center center
+  background url("/img/Vector Smart Object1.png") no-repeat center center
 
 
 .water:before
   @extend .icon-under-img
-  background url("/img/Vector Smart Object3.png") no-repeat center center
+  background url("/img/Vector Smart Object2.png") no-repeat center center
 
+.booklet:hover
+  h4
+    transition  .3s ease-in-out
+    color red
 
 @media only screen and (max-width: 980px)
   .journal-title
@@ -165,8 +169,10 @@
     &-board
       width 100%
       margin-top 30px
+      box-shadow none
+
     &-left-block>div
-      margin-bottom 15px
+      margin-bottom 30px
       box-shadow: 0 0 21px 0 rgba(7,7,7,.23);
     &-right-block
       flex-direction column !important
