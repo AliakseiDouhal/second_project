@@ -14,6 +14,7 @@
   border-radius: 100%
 
   &--grey
+    margin auto
     width: 180px
     background: #f0f3f6
     height: 180px
@@ -82,8 +83,9 @@
     z-index: 2
     background: inherit
 
-.text-after-circle-gray
-  max-width 181px
+.text-how-we-work
+  max-width 100%
+  padding-top 30px
   & p
     text-align center
     color #949494
@@ -96,6 +98,7 @@ ul.steps
   width 100%
   li
     list-style none
+    max-width 218px
     position relative
 
 @media only screen and (min-width: 768px)
@@ -105,7 +108,7 @@ ul.steps
       align-items: center
       justify-content: center
       color #60aeff
-      left: 37%
+      left: calc(50% - 25px)
       top: -50px
       width: 50px
       height: 50px
@@ -148,6 +151,12 @@ ul.steps
       &.step-4:before
         content: "4"
         @extend .steps-numeration
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+  ul.steps
+    li
+      max-width 180px
+
 
 @media only screen and (max-width: 600px)
   .how-we-work
